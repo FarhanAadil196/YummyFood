@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="one">
+        <div class="img">
+            <img id="img" src="Restaurants/logo-removebg-preview.png" alt="">
+        </div>
+        
+        <nav>
+            <ul>
+                <a href="Homepage2.html" id="hom">Home</a>
+                <a href="#menu" id="men">Menus</a>
+                <a href="#Reviews" id="vou">Reviews</a>
+                <a href="#book" id="vou">Booking</a>
+                <a href="#Partners" id="vou">Partners</a>
+                <!-- <a href="Contact.html" id="order"> Sign Up</a> -->
+            </ul>
+        </nav>
+    </div>
+    <section class="book_section layout_padding">
+        <div class="container">
+          <div class="heading_container">
+            <h2>
+              Book A Table
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_container">
+                <form action="">
+                  <div>
+                    <input type="text" class="form-control" placeholder="Your Name" />
+                  </div>
+                  <div>
+                    <input type="text" class="form-control" placeholder="Phone Number" />
+                  </div>
+                  <div>
+                    <input type="email" class="form-control" placeholder="Your Email" />
+                  </div>
+                  <div>
+                    <select class="form-control nice-select wide">
+                      <option value="" disabled selected>
+                        How many persons?
+                      </option>
+                      <option value="">
+                        2
+                      </option>
+                      <option value="">
+                        3
+                      </option>
+                      <option value="">
+                        4
+                      </option>
+                      <option value="">
+                        5
+                      </option>
+                    </select>
+                  </div>
+                  <div>
+                    <input type="date" class="form-control">
+                  </div>
+                  <div class="btn_box">
+                    <button>
+                      Book Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="map_container ">
+                <div id="googleMap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
