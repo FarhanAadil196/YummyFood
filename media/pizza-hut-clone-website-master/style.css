@@ -1,0 +1,306 @@
+.head{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 2px 5px grey;
+    position: relative;
+}
+.logo{
+    width: 67%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.logoimg{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-image: url(images/logo_wide@x2.38f9109e24d22d58d048837b27f54390.png);
+    background-size: cover;
+    width: 155px;
+    height: 30px;  
+    cursor: pointer;
+
+
+}
+.sign{
+    margin-left: auto;
+    font-family: "Open Sans", system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal;
+    text-decoration: underline dotted;
+    text-underline-position: under;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(107, 110, 121);
+    white-space: nowrap;
+    cursor: pointer;
+}
+.sign:hover{
+
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0%;
+}
+
+.first-background{
+    width: 100%;
+    height: 400px;
+    background-image: url(images/home-bg-lg.22d0367a857f775e591d8af33d06ddaa.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+.second-background{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+
+}
+.our{
+    width: 90%;
+    height: 28px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: SharpSansBold,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    line-height: 1;
+    text-transform: capitalize;
+    font-size: 28px;
+
+}
+.images{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+}
+.first{
+    width: 525px;
+    height: 349px;
+    background-image: url(images/one-plus-one-personal.f16f9a0596f045370990c7f893c205cd.1.jpg);
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 17px;
+    margin-right: 10px;
+   
+}
+.second{
+    width: 525px;
+    height: 349px;
+    background-image: url(images/one-plus-one.0607352b2160a25a415a9f1985cc6d4f.1.jpg);
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 17px;
+    
+}
+.thrid{
+    width: 525px;
+    height: 18px;
+    margin-top: 349px;
+    font-family: Open Sans,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 11px;
+    text-align: center;
+    background: #303030;
+    color: white;
+}
+.fourth{
+    width: 525px;
+    height: 18px;
+    margin-top: 349px;
+    font-family: Open Sans,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 11px;
+    text-align: center;
+    background: #303030;
+    color: white;
+}
+.btn{
+    height: 56px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.btns{
+    width: 1060px;
+    height: 100%;
+    color: white;
+    background: #0a8020;
+    border: 0;
+    border-radius: 8px;
+    font-size: 22.4px;
+    cursor: pointer;
+}
+.btns:hover{
+    opacity: .8;
+}
+.bg-black{
+    width: 100%;
+    height: 537px;
+    background-color: black;
+}
+.lists{
+    width: 100%;
+    height: 214px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+.order{
+    width: 125px;
+    height: 154px;
+    color: white;
+    margin-right: 130px;
+}
+span{
+    color: white;
+    font-family: Open Sans,system-ui,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;
+    line-height: 1.5;
+    font-size: 12.8px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.about{
+    width: 125px;
+    height: 154px;
+    color: white;
+    margin-right: 130px;
+}
+.ours{
+    width: 125px;
+    height: 154px;
+    color: white;
+    margin-right: 130px;
+}
+.vist{
+    width: 125px;
+    height: 154px;
+    color: white;
+}
+.icons{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.ios{
+    width: 130px;
+    height: 40px;
+    background-image: url(images/app-store-ios.fd6d0921ff522febd6e2a4c2fab9af72.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.android{
+    width: 130px;
+    height: 40px;
+    background-image: url(images/app-store-google-play.b1ffb9f40420b63efe43e34f60bfb682.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.help{
+    width: 1080px;
+    height: 64px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.feed{
+    width: 573px;
+    height: 64px;
+    color: white;
+    display: flex;
+
+    
+}
+.bt{
+    width: 140px;
+    height: 44px;
+    border-radius: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.social{
+    width: 503px;
+    height: 64px;
+    text-align: center;
+    
+   
+}
+.Follow-us{
+    height: 26px;
+    width: 100%;
+
+}
+.fol{
+    
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+.ico{
+    width: auto;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+}
+.face{
+    width: 40px;
+    height: 32px;
+    background-image: url(images/social-white-facebook.7cce5c98cdf27ef51601f3650f73b465.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.tweet{
+    width: 40px;
+    height: 32px;
+    background-image: url(images/social-white-twitter.ef766a459cb51bbdaf9b24eaa5d21289.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.insta{
+    width: 40px;
+    height: 32px;
+    background-image: url(images/social-white-instagram.cf20de72a775ca841c887ea845457fa0.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.yt{
+    width: 40px;
+    height: 32px;
+    background-image: url(images/social-white-youtube.c5d3435334b39f9535c1eeb639938a30.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.sentance{
+    width: 1080px;
+    height: 89px;
+    color: #78838c;
+    text-align: center;
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fssai{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.ic{
+    width: 72px;
+    height: 72px;
+    background-image: url(images/FSAAI-logo.cb99007614b9cff3e0150bce9711641d.svg);
+    background-size: cover;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
