@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box-body {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.box-container {
+    display: inline-block;
+}
+
+.imgSvg {
+    padding: 32px 0 20px;
+}
+
+.box-title {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.box-input {
+    border: 1px solid #d1d5da;
+    border-radius: 7px;
+    margin-top: 14px;
+    padding: 20px;
+    width: 266px;
+    height: 186px;
+    background-color: #f6f8fa;
+    display: inline-block;
+}
+    
+.form-input {
+    margin: 10px 5px;
+}
+
+.username, .password {
+    font-size: 14px;
+    text-align: left;
+    margin-top:  12px;
+}
+
+.forgot-password {
+    font-size: 12px;
+}
+
+.inputuser, .inputpassword {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    width: 246px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #d1d5da;
+    margin: 8px 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+.inputuser:hover, .inputpassword:hover {
+    box-shadow: 0 0 0 2px #719ECE;
+}
+
+input:focus, .inputpassword:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: solid 0 0 8px #719ECE;
+}
+
+.title-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 125, 224);
+}
+
+.button {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 32px;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #51a569;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2ea44f;
+    transition: all 0.5ms;
+}
+
+.newAccount {
+    font-size: 12px;
+    justify-content: center;
+    border: 1px solid #d1d5da;
+    border-radius: 7px;
+    margin: 16px 0 10px;
+    padding: 15px 20px;
+    width: 268px;
+}
+
+.footer-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.list {
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+}
+
+.terms, .privacy, .security, .contact {
+    font-size: 10px;
+    margin: 7px;
+    list-style: none;
+    display: inline;
+}
