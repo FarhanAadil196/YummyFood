@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Page</title>
+<link rel="stylesheet" href="order2.css">
+<style>
+   body{
+            width: 100%;
+            background-image: url('img/b15.jpg');
+  background-repeat: round;
+  background-attachment: fixed;
+  background-size: contain;
+           margin-right: -40px;
+            margin: 0;
+            padding: 0;
+        }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #f05826bd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        
+    }
+    h1 {
+        text-align: center  ; 
+        font-family: math;
+
+       
+       
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #ff7200;
+        color: white;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: orangered;
+    }
+</style>
+</head>
+<body>
+    <!-- header section start -->
+    <div class="main">
+        
+        <div class="navbar">
+           <div class="icon">
+            <h2 class="logo">Yumroute<br><span>Burger Shop</span></h2>
+            </div>
+             <div class="menu">
+                <ul>
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="index.html#order">PRODUCT</a></li>
+                    <li><a href="index.html#news">CONTACT</a></li>
+                    <li><a href="index.html#Cont1">SERVICES</a></li>
+                    <li><a href="index.html#review">REVIEW</a></li>
+                    <li><a href="index.html#book">BOOKING</a></li>
+                    <img src="./img/hamburger-menu.png" class="hamburger-menu"/>
+                </ul> 
+            </div>
+            <div class="search">
+               <input class="srch" type="search" name="" placeholder="Search">
+                <a href="#"><button class="btn">Search</button></a>
+             </div>
+
+        </div>
+        <!-- headter section end -->
+<div class="container">
+    <h1>Order Here</h1>
+    <form action="order_processing_page.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  placeholder="Enter Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  placeholder="Enter Your Name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"  placeholder="Enter Your Address" required>
+
+        <label for="mobile">Mobile No.:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"   placeholder="Enter Your Mobile No "required>
+
+        <label for="coffee">FoodName:</label>
+        <select id="coffee" name="coffee" required>
+            <option value="NONE">NONE</option>
+            <option value="Chicken Burger"> Chicken Burger</option>
+            <option value="Chicken Pizza">Chicken Pizza</option>
+            <option value="Peri peri Pizza">Peri peri Pizza</option>
+            <option value="Paperoni Pizza">Paperoni Pizza</option>
+            <option value="Shawarma">Shawarma</option>
+            <option value="Coke">Coke</option>
+            <option value="Broasted Chicken">Broasted Chicken</option>
+            <option value="BBQ Chicken">BBQ Chicken</option>
+            <option value="Wrap">Wrap</option>
+            <option value="Chicken Wrap">Chicken Wrap</option>
+            <option value="Veg Wrap">Veg Wrap</option>
+            <option value="Chicken Wings">Chicken Wings</option>
+            <option value="Wedges">Wedges</option>
+            <option value="French Fries">French Fries</option>
+            <option value="Lasanga">Lasanga</option>
+        
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" readonly>
+
+        <label for="payment">Payment Type:</label>
+        <select id="payment" name="payment" required>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash on Delivery</option>
+        </select>
+
+        <input type="submit" value="Place Order"> 
+    </form>
+</div>
+<script>
+    // Calculate price based on coffee type and quantity
+    document.getElementById('coffee').addEventListener('change', function() {
+        calculatePrice();
+    });
+    document.getElementById('quantity').addEventListener('input', function() {
+        calculatePrice();
+    });
+
+    function calculatePrice() {
+        const FoodName = document.getElementById('coffee').value;
+        const quantity = document.getElementById('quantity').value;
+        let price = 0;
+
+        // Calculate price based on coffee type
+        switch(FoodName) {
+                case 'Chicken Burger':
+                price =  150;
+                break;
+                case 'Chicken Pizza':
+                price = 250;
+                break;
+                case 'Peri peri Pizza':
+                price = 270;
+                break;
+                case 'Paperoni Pizza':
+                price = 300;
+                break
+                case 'Shawarma':
+                price = 100;
+                break;
+                case 'Coke':
+                price = 50;
+                break;
+                case 'Broasted Chicken':
+                price = 200;
+                break;
+                case 'BBQ Chicken':
+                price = 440;
+                break;
+                case 'Wrap':
+                price = 150;
+                break;
+                case 'Chicken Wrap':
+                price = 190;
+                break;
+                case 'Veg Wrap':
+                price = 120;
+                break;
+                case 'Chicken Wings':
+                price = 220;
+                break;
+                case 'Wedges':
+                price = 90;
+                break;
+                case 'French Fries':
+                price = 80;
+                break;
+                case 'Lasanga':
+                price = 200;
+                break;
+        }
+
+        // Calculate total price
+        price *= quantity;
+
+        // Update price input field
+        document.getElementById('price').value = price.toFixed(2);
+        
+    }
+</script>
+<div>
+    <footer class="footer">
+        <div class="sections-container">
+
+            <div class="footer-sections ">
+                <p class="section-title">Quick links:</p><br>
+                <div class="section-links">
+                    <h4><p><a href="index.html#cont1" class="about-links">About</a></p><br>
+                    <p><a href="index.html#sub" class="about-links" >Contact</a></p><br>
+                    <p><a href="index.html#menu" class="about-links">Services</a></p><br>
+                    <a href="#Book" class="about-links">Booking</a>
+                    <p><a href="index.html#Reviews" class="about-links">Review</a></p><br></h4>
+                </div> 
+            </div>
+    
+            <div class="footer-sections">
+                <p class="section-title">Supports:</p><br>
+                <div class="section-links">
+                    <h3><p>Payment</p><br>
+                    <p>Security</p><br>
+                    <p>FAQ</p><br>
+                    <p>Privacy Police</p><br></h3>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <p class="section-title">Social:</p><br>
+                <div class="section-links">
+                    <h3><p><p><i class="fa-brands fa-youtube"></i>  &nbsp; YouTube</p><br>
+                        <p><i class="fa-solid fa-envelope"></i> &nbsp; Mail Us</p><br>
+                        <p><i class="fa-solid fa-phone"></i> &nbsp; Call Us</p><br>
+                    <p><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</p><br></h3>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <p><a href="contact.html"class="section-title">Contact Us: </a></p><br>
+                <div class="section-links">
+                    <h4><p><h2>Yumroute Burger shop</h2></a></p><br>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:sakshigore2153@gmail.com" class="about-links">YumrouteBurgershop@gamil.com</a></p><br>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:9766559236" class="about-links">Tel: +91623456789</a></p></h4>
+                    
+               </div>
+            </div>   
+    
+           
+        </div>
+
+        <hr/>
+        <p style="text-align: center; color: #ff7200; margin: 0; padding: 0;">Copyright@ YUMROUTE.All Rights Reserved</p>
+
+    </footer>
+</div>
+    <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
+</body>
+</html>
